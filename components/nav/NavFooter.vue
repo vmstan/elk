@@ -53,7 +53,7 @@ function toggleDark() {
       <NuxtLink
         v-if="buildInfo.env === 'release'"
         external
-        :href="`https://status.vmst.io/releases/tag/v${buildInfo.version}`"
+        :href="`https://github.com/elk-zone/elk/releases/tag/v${buildInfo.version}`"
         target="_blank"
         font-mono
       >
@@ -64,7 +64,7 @@ function toggleDark() {
         &middot;
         <NuxtLink
           external
-          :href="`https://status.vmst.io/commit/${buildInfo.commit}`"
+          :href="`https://github.com/elk-zone/elk/commit/${buildInfo.commit}`"
           target="_blank"
           font-mono
         >
@@ -85,10 +85,6 @@ function toggleDark() {
       &middot;
       <NuxtLink href="http://vmst.io" target="_blank">
         Mastodon
-      </NuxtLink>
-      &middot;
-      <NuxtLink href="https://docs.vmst.io/funding" target="_blank" external>
-        Funding
       </NuxtLink>
       &middot;
       <NuxtLink href="https://status.vmst.io" target="_blank" external>
